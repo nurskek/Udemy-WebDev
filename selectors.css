@@ -1,0 +1,32 @@
+* {
+    color: pink;
+    /* universal selector */
+}
+
+button {
+    font-size: 25px;
+    /* element selector */
+}
+
+h1, h2 {
+
+    color: black;
+    /* combine selectors through commas */
+}
+
+#email {
+    border-color: violet;
+    /* id selectors
+        no need to write id for each element */
+}
+
+.n {
+    color:tomato;
+    /* class selectors
+        several elements with same properties */
+}
+
+p a {
+    color:blueviolet;
+    /* nested selector - select all 'a' in 'li' */
+}

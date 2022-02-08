@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marathon.css ">
+    <link rel="stylesheet" href="selectors.css">
+    
     <title>Race Registration Form</title>
 </head>
 <body>
     <h1>Race Registration!</h1>
     <form action="/dummy">
         <div>
-            <label for="fname">First name</label>
+            <label for="fname" class="n">First name</label>
             <input id="fname" type="text" name="1" required>
-            <label for="lname">Last Name</label>
+            <label for="lname" class="n">Last Name</label>
             <input type="password" id="lname" name="2" required>
         </div>
         <div>
@@ -25,11 +28,11 @@
             <label for="Full">Full marathon</label> <br>
         </div>
         <div>
-            <label for="email">Email </label>
+            <label for="email" class="n">Email </label>
             <input type="email" id="email" name="em" required>
-            <label for="psword">Password</label>
+            <label for="psword" class="n">Password</label>
             <input type="password" id="psword" name="ps"> <br>
-            <label for="age">Select age group: </label>
+            <label for="age" class="n">Select age group: </label>
             <select name="ageg" id="age">
                     <option value="">None</option>
                     <option value="0-20">0 to 20</option>
@@ -39,5 +42,12 @@
         </div>
         <button type="submit">Register!</button>
     </form>
+
+    <p>
+        pc. <a href="nowhere">this</a> looks ugly
+    </p>
+
+    <a href="n">bye</a>
+
 </body>
 </html>

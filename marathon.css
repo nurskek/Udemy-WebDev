@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    text-decoration: wavy green underline;
+    font-weight: 400;
+     /*400 or normal  */
+    letter-spacing: 10px;
+    font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* px - is absolute unit, but not always equal to the actual wd
+        not recommended in responsice design 
+        
+*/
+
+/*  cssfontstack.com -> percent of use exact font
+    general fonts -> specific: sans-serif -> futura
+
+
+*/
+
+p {
+    /* text-align: center; */
+    line-height: 1.2;
+    /* default multiplied by 1.2 */
+}
