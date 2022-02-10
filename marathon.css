@@ -11,9 +11,23 @@ a {
     text-decoration: none;
 }
 /* px - is absolute unit, but not always equal to the actual wd
-        not recommended in responsice design 
-        
+        not recommended in responsice design
+
+   %  - always relative some value. it may be parent, or element itself
+
+   em - relative. 1em is the font-size of its parent. 2em twice as parent's font-size
+   ps. didn't understand all the stuff. but inside the element all the other settings relative to
+   element's own font-size
+
+   em's minus: in nested structures sizes may stack (1.5 x 1.5 x ...)
+
+   rem - relative to root element's font
+   root is <html blablabla>
 */
+
+#one h1{
+    font-size: 10rem;
+}
 
 /*  cssfontstack.com -> percent of use exact font
     general fonts -> specific: sans-serif -> futura
@@ -24,5 +38,6 @@ a {
 p {
     /* text-align: center; */
     line-height: 1.2;
+    width: 400px;
     /* default multiplied by 1.2 */
 }

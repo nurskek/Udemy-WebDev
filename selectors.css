@@ -1,5 +1,6 @@
 * {
     color: pink;
+    background-color: rgb(45, 156, 91);
     /* universal selector */
 }
 
@@ -20,8 +21,12 @@ h1, h2 {
         no need to write id for each element */
 }
 
+div + h3 {
+    color: green;
+}
+
 .n {
-    color:tomato;
+    color:tomato !important;
     /* class selectors
         several elements with same properties */
 }
@@ -30,3 +35,94 @@ p a {
     color:blueviolet;
     /* nested selector - select all 'a' in 'li' */
 }
+
+input + label {
+    color: green;
+    /* when one element comes immediately after another (adjacent)
+        <input>
+        <label>
+    */
+}
+
+div > label {
+    font-size: 20px;
+    /* direc decendent selector
+        <div> 
+            <label>dad</label>
+        </div> 
+    */
+}
+
+input[type="text"] {
+    border-radius: 10%;
+    /* attribute selector */
+}
+
+a[href*="no"] {
+    size: 15px;
+    /* case-sensitive
+       there is other combinations like *=, $=, etc. 
+    */
+}
+
+
+/*  PSEUDO CLASSES - added to selector that specifies
+    special state of chosen element
+*/
+
+p a:hover {
+    color: orange;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+}
+
+button:active {
+    /* when the button is activated */
+    background-color: green;
+}
+
+input:nth-of-type(2n){
+    background-color:#e5e5e5;
+    /* every second element in a row will be changed */
+}
+
+/* PSEUDO ELEMENTS - keyword added to a selector that lets you style
+    particular part of selected element
+
+    with ::
+*/
+
+h1::first-letter {
+    font-size: 50px;
+    /* also
+        - first-line
+        -  */
+}
+
+label::selection {
+    color: black;
+}
+
+/* with the same selector
+    wins the characteristics
+     which is later
+   OVERWRITE, cascade */
+
+
+/* SPECIFICITY - when selectors target one element
+    how does it change? 
+    
+    !important > INLINE STYLES > ID > CLASS > ELEMENT > inherited_from_parent
+
+    HELP : specificity calculator
+    */
+
+button {
+    color: inherit;
+    /* inherited from the nearest parent */
+} 
+    /* not all elements can have smth inherited */
+

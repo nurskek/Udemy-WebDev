@@ -1,0 +1,59 @@
+/* CONTENTS: 
+    - BORDER
+    - MARGIN
+    - PADDING
+    - DISPLAY 
+*/
+
+#one {
+    border-width: 5px;
+    border-color: lightblue;
+    border-style: solid;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 9px 11px;
+}
+
+#two {
+    border-width: 4px;
+    border-color: lightblue;
+    border-style: solid;
+    /* box-sizing: border-box; */
+    border-left-style: dashed;
+    margin: 10px;
+    padding: 9px 11px;
+    display: none;
+    
+}
+
+#three {
+    border: 3px solid white;
+    border-radius: 5%;
+    padding: 10px;
+    padding-left: 11px;
+    padding: 9px 11px;
+    /* clockwise if 4 are present */
+
+    margin: 10px;
+    /* spacing outside the border */
+}
+
+/* padding - between content and border */
+
+h2 {
+    display: inline;
+    /* inline elements are ignored bby neighbors. bcz they are really not blocks but inline elements.
+       it doesn't have
+        - width
+        - height 
+    */
+}
+
+span {
+    display: block;
+    display: inline-block; 
+    height: 15px;
+    width: 15px;
+    
+    /* inline-block is a mix of two (can be sized by h&w) */
+}
