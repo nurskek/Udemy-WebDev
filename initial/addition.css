@@ -1,0 +1,14 @@
+#one {
+    background-color: rgba(255, 255, 255, 0.3); 
+    /* last one is opacity 1 -> 0 and only affects selected parameter*/
+    opacity: 1;
+    /* whole is affected */
+}
+
+/* position:
+    fixed: fixed in one position even when scrolled
+    sticky: initially in its place then it says when scrolled
+    relative: relative to its neighbors
+    absolute: relative to its parent container in some way
+    
+    overall, didn't understand quite to use it*/
